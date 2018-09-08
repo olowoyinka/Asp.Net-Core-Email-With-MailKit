@@ -1,0 +1,70 @@
+@model Emails.Models.Email
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Email</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="FromAddress" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="FromAddress" class="form-control" />
+                <span asp-validation-for="FromAddress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="FromAddressTitle" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input type="file"  asp-for="FromAddressTitle"  />
+                <span asp-validation-for="FromAddressTitle" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ToAddress" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="ToAddress" class="form-control" />
+                <span asp-validation-for="ToAddress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ToAddressTitle" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="ToAddressTitle" class="form-control" />
+                <span asp-validation-for="ToAddressTitle" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Message" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Message" class="form-control" />
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="BodyContent" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <textarea asp-for="BodyContent" class="form-control"></textarea>
+                <span asp-validation-for="BodyContent" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

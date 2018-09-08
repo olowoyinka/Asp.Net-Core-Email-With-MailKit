@@ -1,0 +1,59 @@
+@model Emails.Models.Email
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Email</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <input type="hidden" asp-for="EmailID" />
+        <dt>
+            @Html.DisplayNameFor(model => model.FromAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FromAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FromAddressTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FromAddressTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ToAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ToAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ToAddressTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ToAddressTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BodyContent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BodyContent)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

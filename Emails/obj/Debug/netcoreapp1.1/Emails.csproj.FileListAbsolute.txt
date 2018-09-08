@@ -1,0 +1,10 @@
+c:\users\fela\documents\visual studio 2017\Projects\Emails\Emails\bin\Debug\netcoreapp1.1\Emails.deps.json
+c:\users\fela\documents\visual studio 2017\Projects\Emails\Emails\bin\Debug\netcoreapp1.1\Emails.runtimeconfig.json
+c:\users\fela\documents\visual studio 2017\Projects\Emails\Emails\bin\Debug\netcoreapp1.1\Emails.runtimeconfig.dev.json
+c:\users\fela\documents\visual studio 2017\Projects\Emails\Emails\bin\Debug\netcoreapp1.1\Emails.dll
+c:\users\fela\documents\visual studio 2017\Projects\Emails\Emails\bin\Debug\netcoreapp1.1\Emails.pdb
+c:\users\fela\documents\visual studio 2017\Projects\Emails\Emails\obj\Debug\netcoreapp1.1\Emails.csprojResolveAssemblyReference.cache
+c:\users\fela\documents\visual studio 2017\Projects\Emails\Emails\obj\Debug\netcoreapp1.1\Emails.AssemblyInfo.cs
+c:\users\fela\documents\visual studio 2017\Projects\Emails\Emails\obj\Debug\netcoreapp1.1\Emails.dll
+c:\users\fela\documents\visual studio 2017\Projects\Emails\Emails\obj\Debug\netcoreapp1.1\Emails.pdb
+C:\Users\fela\Documents\Visual Studio 2017\Projects\Emails\Emails\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs

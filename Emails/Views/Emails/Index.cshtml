@@ -1,0 +1,65 @@
+@model IEnumerable<Emails.Models.Email>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FromAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FromAddressTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ToAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ToAddressTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Message)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BodyContent)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromAddressTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToAddressTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BodyContent)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmailID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmailID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmailID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
